@@ -19,7 +19,6 @@ class MealsScreen extends StatelessWidget {
       MaterialPageRoute(
         builder: (ctx) => MealDetailsScreen(
           meal: meal,
-         
         ),
       ),
     );
@@ -63,6 +62,7 @@ class MealsScreen extends StatelessWidget {
     if (title == null) {
       return content;
     }
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title!),
